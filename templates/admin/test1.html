@@ -1,0 +1,11 @@
+{% extends 'admin/base.html' %}
+{% block content %}
+
+<label style="font-weight:bold">Name:</label> {{user_details.name}}<br>
+<label style="font-weight:bold">Username:</label> {{user_details.user}}<br>
+<label style="font-weight:bold">Email:</label> {{user_details.email}}<br>
+<label style="font-weight:bold">Gender:</label> {{user_details.gender}}<br>
+<label style="font-weight:bold">Date of Birth:</label> {{user_details.dob}}<br>
+<label style="font-weight:bold">Phone:</label> {{user_details.phone}}<br>
+<p><img src="{{user_details.avatar.url}}"> </p>
+{% endblock %}
